@@ -155,7 +155,7 @@
 @utility container-site { margin-inline: auto; width: 100%; max-width: 76rem; padding-inline: 1.5rem; }
 @utility band { background: var(--band); }
 @utility hero-overlay { background: var(--hero-overlay); }
-@utility section-title { font-family: var(--font-display); font-size: 2.5rem; text-transform: uppercase; color: var(--color-primary); line-height: 1; }
+@utility section-title { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-primary); line-height: 1; }
 @utility btn-base { display: inline-flex; align-items: center; gap: .5rem; border-radius: .375rem; padding: .75rem 1.5rem; font-weight: 600; transition: all .2s; }
 @utility btn-primary { @apply btn-base bg-primary text-primary-foreground hover:opacity-90; }
 @utility btn-light { @apply btn-base bg-background text-primary hover:opacity-90; }

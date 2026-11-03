@@ -1,29 +1,74 @@
-# Baús Usados Brasil
+# CARLÃO | Baús e Caminhões
 
-Faça para mim um site, esse cliente vende e compra baús usados. 
-faça um site baseado no modelo que enviei, mas sem o formulário de contato.
-os dados:
-19 9 8801-0659
+Site institucional da CARLÃO, empresa especializada em carrocerias e baús para caminhões. A página apresenta os produtos e serviços, informações da empresa, localização e canais de atendimento para compra, venda, troca e consignação.
 
-Rodovia Jornalista Francisco Aguirre Proença,km 16+800
+## Recursos
 
-This project was built with [Lovable](https://lovable.dev).
+- Apresentação da empresa e de seus produtos.
+- Galeria de imagens dos baús disponíveis.
+- Atalhos para contato via WhatsApp.
+- Informações de endereço e mapa.
+- Layout responsivo para dispositivos móveis e computadores.
 
-## Build with Lovable
+## Tecnologias
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/68f9c9da-9ac2-41ca-9177-cd2ac62664a5).
+- React 19 e TypeScript
+- TanStack Start e TanStack Router
+- Vite
+- Tailwind CSS
+- Bun para gerenciamento de dependências e execução de scripts
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Requisitos
 
-## Development
+- [Node.js](https://nodejs.org/)
+- [Bun](https://bun.sh/)
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Instalação e execução
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+Na raiz do projeto, instale as dependências:
+
+```bash
+bun install
 ```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+bun run dev
+```
+
+Abra no navegador o endereço informado no terminal.
+
+## Scripts disponíveis
+
+| Comando | Descrição |
+| --- | --- |
+| `bun run dev` | Inicia o servidor de desenvolvimento. |
+| `bun run build` | Gera a versão de produção. |
+| `bun run build:dev` | Gera a versão em modo de desenvolvimento. |
+| `bun run preview` | Pré-visualiza a versão de produção. |
+| `bun run lint` | Executa as verificações de código com ESLint. |
+| `bun run format` | Formata os arquivos com Prettier. |
+| `bun run test` | Executa os testes uma vez. |
+| `bun run test:watch` | Executa os testes em modo de observação. |
+
+## Estrutura do projeto
+
+```text
+src/
+├── assets/       # Logotipo e imagens utilizadas no site
+├── components/   # Componentes reutilizáveis
+├── lib/          # Utilitários compartilhados
+├── routes/       # Páginas e rotas da aplicação
+└── styles.css    # Estilos globais
+```
+
+## Build de produção
+
+Para gerar os arquivos de produção:
+
+```bash
+bun run build
+```
+
+Os artefatos são gerados no diretório `.output/`.
