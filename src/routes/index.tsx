@@ -65,7 +65,7 @@ function Index() {
         <img src={hero} alt="Pátio com baús usados" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="container-site relative py-24 text-hero-foreground">
-          <p className="mt-3 text-xl font-semibold uppercase tracking-[0.15em] text-highlight">Baús e Caminhões</p>
+          <p className="mt-3 text-2xl font-semibold uppercase tracking-[0.15em] text-highlight">Baús e Caminhões</p>
           <p className="mt-6 max-w-xl text-lg opacity-90">Os melhores baús seminovos para seu caminhão você encontra aqui.</p>
           <div className="mt-12 flex flex-wrap gap-3">
             <a href={WA} target="_blank" rel="noreferrer" className="btn-primary">Fale conosco</a>
