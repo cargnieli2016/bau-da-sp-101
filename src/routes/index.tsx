@@ -84,15 +84,6 @@ function Index() {
         ))}
       </section>
 
-      <section className="container-site pb-24">
-        <div className="band rounded-2xl px-8 py-14 text-center text-primary-foreground">
-          <h2 className="font-display text-3xl uppercase md:text-4xl">Trabalhamos com</h2>
-          <p className="mx-auto mt-4 max-w-3xl opacity-90">Compra, venda, troca e consignação de baús seminovos e carrocerias para seu caminhão.</p>
-          <p className="mt-3 font-semibold tracking-wide text-highlight">COMPRA · VENDA · TROCA · CONSIGNAÇÃO</p>
-          <a href={WA} target="_blank" rel="noreferrer" className="btn-light mt-8">Entre em contato</a>
-        </div>
-      </section>
-
       <section id="produtos" className="container-site pb-24">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <img src={img3} alt="Baú usado à venda" className="h-80 w-full rounded-xl object-cover shadow-elevated" />
@@ -111,6 +102,15 @@ function Index() {
           {[pano, p1, p3].map((p, i) => (
             <img key={i} src={p} alt="Pátio de baús usados" className="h-48 w-full rounded-xl object-cover" />
           ))}
+        </div>
+      </section>
+
+      <section className="container-site pb-24">
+        <div className="band rounded-2xl px-8 py-14 text-center text-primary-foreground">
+          <h2 className="font-display text-3xl uppercase md:text-4xl">Trabalhamos com</h2>
+          <p className="mx-auto mt-4 max-w-3xl opacity-90">Compra, venda, troca e consignação de baús seminovos e carrocerias para seu caminhão.</p>
+          <p className="mt-3 font-semibold tracking-wide text-highlight">COMPRA · VENDA · TROCA · CONSIGNAÇÃO</p>
+          <a href={WA} target="_blank" rel="noreferrer" className="btn-light mt-8">Entre em contato</a>
         </div>
       </section>
 
