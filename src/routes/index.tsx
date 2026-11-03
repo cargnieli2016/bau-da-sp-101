@@ -100,7 +100,7 @@ function Index() {
           <img src={img3} alt="Baú usado à venda" className="h-80 w-full rounded-xl object-cover shadow-elevated" />
           <div>
             <h2 className="section-title">Conheça nossos produtos</h2>
-            <p className="mt-6 text-muted-foreground">Baús usados de várias medidas, em excelente estado e com ótimos preços. Carrocerias, baús Sayder, baús alumínio e serviços de compra, venda, troca e consignação.</p>
+            <p className="mt-6 text-muted-foreground">Baús usados de várias medidas, em excelente estado e com ótimos preços. Carrocerias, baús Sayder e baús de alumínio.</p>
             <ul className="mt-6 space-y-3">
               {["Carrocerias", "Baús Sayder", "Baús alumínio", "Para Bongo, HR, Iveco, Sprinter, Master, 3/4, toco, truck e bitruck"].map((i) => (
                 <li key={i} className="flex gap-3"><Truck className="h-5 w-5 shrink-0 text-primary" />{i}</li>
