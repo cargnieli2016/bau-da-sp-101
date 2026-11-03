@@ -6,10 +6,15 @@
 // Additional Vite settings can be passed via defineConfig({ vite: { ... } }).
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+
 export default defineConfig({
+  vite: {
+    base: isGitHubPages ? "/carlao-bau-e-caminhoes/" : "/",
+  },
+  nitro: isGitHubPages ? false : undefined,
   tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
+    prerender: { enabled: isGitHubPages },
     server: { entry: "server" },
   },
 });

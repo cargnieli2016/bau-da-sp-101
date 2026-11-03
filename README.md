@@ -72,3 +72,13 @@ bun run build
 ```
 
 Os artefatos são gerados no diretório `.output/`.
+
+## Publicação
+
+Cada atualização enviada à branch `main` inicia automaticamente a publicação no GitHub Pages. O workflow gera uma versão estática compatível com o endereço do projeto e publica o conteúdo de `dist/client`.
+
+Na primeira publicação, configure o repositório em **Settings → Pages → Build and deployment → Source: GitHub Actions**. O endereço esperado do site é:
+
+`https://cargnieli2016.github.io/carlao-bau-e-caminhoes/`
+
+A configuração padrão continua usando Nitro para builds destinados ao Cloudflare. A geração estática é ativada somente pelo workflow do GitHub Pages.
