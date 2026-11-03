@@ -59,21 +59,30 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-highlight: var(--highlight);
+  --color-hero-foreground: var(--hero-foreground);
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Barlow", sans-serif;
+  --shadow-elevated: 0 20px 40px -15px oklch(0.3 0.08 245 / 0.45);
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --highlight: oklch(0.82 0.15 80);
+  --hero-foreground: oklch(0.99 0 0);
+  --band: linear-gradient(135deg, oklch(0.36 0.09 245), oklch(0.5 0.1 240));
+  --hero-overlay: linear-gradient(90deg, oklch(0.18 0.05 250 / 0.85), oklch(0.18 0.05 250 / 0.3));
+  --background: oklch(0.99 0.003 240);
+  --foreground: oklch(0.22 0.03 250);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.47 0.1 245);
+  --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
+  --muted: oklch(0.96 0.01 240);
   --muted-foreground: oklch(0.554 0.046 257.417);
   --accent: oklch(0.968 0.007 247.896);
   --accent-foreground: oklch(0.208 0.042 265.755);
@@ -142,3 +151,12 @@
     color: var(--color-foreground);
   }
 }
+
+@utility container-site { margin-inline: auto; width: 100%; max-width: 76rem; padding-inline: 1.5rem; }
+@utility band { background: var(--band); }
+@utility hero-overlay { background: var(--hero-overlay); }
+@utility section-title { font-family: var(--font-display); font-size: 2.5rem; text-transform: uppercase; color: var(--color-primary); line-height: 1; }
+@utility btn-base { display: inline-flex; align-items: center; gap: .5rem; border-radius: .375rem; padding: .75rem 1.5rem; font-weight: 600; transition: all .2s; }
+@utility btn-primary { @apply btn-base bg-primary text-primary-foreground hover:opacity-90; }
+@utility btn-light { @apply btn-base bg-background text-primary hover:opacity-90; }
+@utility btn-outline-light { @apply btn-base border-2 border-hero-foreground text-hero-foreground hover:bg-hero-foreground hover:text-foreground; }
