@@ -150,7 +150,8 @@ function Index() {
       </section>
 
       <footer className="band text-primary-foreground">
-        <div className="container-site grid gap-8 py-12 md:grid-cols-2">
+        <div className="container-site grid gap-8 py-12 md:grid-cols-3">
+          <img src={logo.url} alt="Baú da SP-101" className="h-24 w-auto rounded-lg bg-background p-2" />
           <div className="space-y-2 text-sm">
             <p className="font-semibold">Contato</p>
             <p>{PHONE}</p>
