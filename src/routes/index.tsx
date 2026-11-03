@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone, MapPin, MessageCircle, Target, Eye, Gem, Truck, Star } from "lucide-react";
+import { Phone, MapPin, Target, Eye, Gem, Truck, Star } from "lucide-react";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import logo from "@/assets/logo-novo.png.asset.json";
 import hero from "@/assets/20261027_122244.jpg.asset.json";
 import img1 from "@/assets/20261027_122233.jpg.asset.json";
@@ -51,7 +52,7 @@ function Index() {
             <a href="#produtos" className="hover:text-primary">Produtos</a>
             <a href="#contato" className="hover:text-primary">Contato</a>
           </nav>
-          <a href={WA} target="_blank" rel="noreferrer" className="btn-primary hidden sm:inline-flex"><MessageCircle className="h-4 w-4" /> WhatsApp</a>
+          <a href={WA} target="_blank" rel="noreferrer" className="btn-primary hidden sm:inline-flex"><WhatsAppIcon className="h-4 w-4" /> WhatsApp</a>
         </div>
       </header>
 
@@ -140,7 +141,7 @@ function Index() {
           <h2 className="font-display text-3xl uppercase">Fale conosco</h2>
           <p className="mt-3 opacity-90">Ligue ou chame no WhatsApp para comprar ou vender seu baú.</p>
           <div className="mt-8 space-y-5">
-            <a href={WA} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-lg"><MessageCircle className="h-5 w-5" />{PHONE}</a>
+            <a href={WA} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-lg"><WhatsAppIcon className="h-5 w-5" />{PHONE}</a>
             <p className="flex items-start gap-3"><MapPin className="mt-1 h-5 w-5 shrink-0" />{ADDRESS}</p>
           </div>
           <a href={WA} target="_blank" rel="noreferrer" className="btn-light mt-10">Chamar no WhatsApp</a>
@@ -163,7 +164,7 @@ function Index() {
         <p className="border-t border-primary-foreground/20 py-4 text-center text-xs opacity-80">© {new Date().getFullYear()} Baú da SP-101. Todos os direitos reservados.</p>
       </footer>
 
-      <a href={WA} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-elevated"><MessageCircle className="h-7 w-7" /></a>
+      <a href={WA} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-elevated"><WhatsAppIcon className="h-7 w-7" /></a>
     </div>
   );
 }
