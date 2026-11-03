@@ -69,7 +69,7 @@ function Index() {
           <h1 className="font-display text-5xl uppercase leading-none md:text-7xl">CARLÃO</h1>
           <p className="mt-3 text-xl font-semibold uppercase tracking-[0.15em] text-highlight">Baús e Caminhões</p>
           <p className="mt-6 max-w-xl text-lg opacity-90">Os melhores baús seminovos para seu caminhão você encontra aqui.</p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-12 flex flex-wrap gap-3">
             <a href={WA} target="_blank" rel="noreferrer" className="btn-primary">Fale conosco</a>
             <a href="#sobre" className="btn-outline-light">Saiba mais</a>
           </div>
