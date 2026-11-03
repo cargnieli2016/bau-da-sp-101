@@ -100,7 +100,9 @@ function Index() {
         </div>
         <div className="mt-12 grid gap-4 md:grid-cols-3">
           {[pano, p1, p3].map((p, i) => (
-            <img key={i} src={p} alt="Pátio de baús usados" className="h-48 w-full rounded-xl object-cover" />
+            <div key={i} className="group overflow-hidden rounded-xl">
+              <img src={p} alt="Pátio de baús usados" className="h-48 w-full rounded-xl object-cover transition-transform duration-300 ease-out group-hover:scale-105 motion-reduce:transition-none" />
+            </div>
           ))}
         </div>
       </section>
