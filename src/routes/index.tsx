@@ -131,9 +131,7 @@ function Index() {
 
       <section id="contato" className="container-site grid gap-8 py-24 md:grid-cols-2">
         <div className="band rounded-2xl p-10 text-primary-foreground">
-          <h2 className="font-display text-3xl uppercase">MAIORES INFORMAÇÕES</h2>
-          <p className="mt-3 opacity-90">Ligue ou chame no WhatsApp para comprar, vender, trocar ou consignar seu baú.</p>
-          <div className="mt-8 space-y-5">
+          <div className="space-y-5">
             <a href={WA_ALT} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-lg"><WhatsAppIcon className="h-5 w-5" />{PHONE_ALT} <span className="text-sm opacity-80">Carlos</span></a>
             <a href={WA} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-lg"><WhatsAppIcon className="h-5 w-5" />{PHONE} <span className="text-sm opacity-80">Carlos</span></a>
             <p className="flex items-start gap-3"><MapPin className="mt-1 h-5 w-5 shrink-0" />{ADDRESS}</p>
