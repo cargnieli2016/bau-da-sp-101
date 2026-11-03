@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://cargnieli2016.github.io/carlao-bau-e-caminhoes/sitemap.xml

@@ -74,12 +74,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "CARLÃO | Baús e Caminhões" },
-      { name: "description", content: "Compra, venda, troca e consignação de baús usados" },
-      { property: "og:title", content: "CARLÃO | Baús e Caminhões" },
-      { property: "og:description", content: "Compra, venda, troca e consignação de baús usados" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {

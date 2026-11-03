@@ -15,17 +15,20 @@ const WA = "https://wa.me/5519988010659";
 const WA_ALT = "https://wa.me/5519999529009";
 const ADDRESS = "Rod. Jorn. Francisco Aguirre Proença, km 16+700, 2800, Monte Mor - SP, 13190-000";
 const MAP = `https://www.google.com/maps?q=${encodeURIComponent(ADDRESS + ", SP")}&output=embed`;
+const SITE_URL = "https://cargnieli2016.github.io/carlao-bau-e-caminhoes/";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "CARLÃO | Baús e Caminhões" },
-      { name: "description", content: "CARLÃO Baús e Caminhões: compra, venda, troca e consignação de baús seminuevos e carrocerias. Rod. Jorn. Francisco Aguirre Proença, km 16+700, 2800, Monte Mor - SP, 13190-000." },
+      { name: "description", content: "Baús seminovos e carrocerias para caminhões em Monte Mor, SP. Compra, venda, troca e consignação com atendimento direto da CARLÃO." },
       { property: "og:title", content: "CARLÃO | Baús e Caminhões" },
-      { property: "og:description", content: "Baús usados para caminhões com ótimo preço e atendimento. Ligue (19) 9 8801-0659 ou (19) 9 9952-9009." },
+      { property: "og:description", content: "Baús seminovos e carrocerias para caminhões em Monte Mor, SP. Conheça a CARLÃO e fale com nossa equipe." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: SITE_URL },
+      { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: SITE_URL }],
   }),
   component: Index,
 });
@@ -65,6 +68,7 @@ function Index() {
         <img src={hero} alt="Pátio com baús usados" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="container-site relative py-24 text-hero-foreground">
+          <h1 className="sr-only">Baús seminovos e carrocerias para caminhões em Monte Mor</h1>
           <p className="mt-3 text-2xl font-semibold uppercase tracking-[0.15em] text-highlight">Baús e Caminhões</p>
           <p className="mt-6 max-w-xl text-lg opacity-90">Os melhores baús seminovos para seu caminhão você encontra aqui.</p>
           <div className="mt-12 flex flex-wrap gap-3">
