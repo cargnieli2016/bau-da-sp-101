@@ -140,7 +140,6 @@ function Index() {
           <h2 className="font-display text-3xl uppercase">Fale conosco</h2>
           <p className="mt-3 opacity-90">Ligue ou chame no WhatsApp para comprar ou vender seu baú.</p>
           <div className="mt-8 space-y-5">
-            <a href="tel:+5519988010659" className="flex items-center gap-3 text-lg"><Phone className="h-5 w-5" />{PHONE}</a>
             <a href={WA} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-lg"><MessageCircle className="h-5 w-5" />{PHONE}</a>
             <p className="flex items-start gap-3"><MapPin className="mt-1 h-5 w-5 shrink-0" />{ADDRESS}</p>
           </div>
